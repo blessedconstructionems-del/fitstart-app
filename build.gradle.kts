@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "1.9.23"
+    application
 }
 
 group = "com.fitstart"
@@ -15,4 +16,12 @@ dependencies {
 
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
     kotlinOptions.jvmTarget = "17"
+}
+
+application {
+    mainClass.set("com.fitstart.AppKt")
+}
+
+application {
+    mainClass.set("com.fitstart.AppKt")
 }
