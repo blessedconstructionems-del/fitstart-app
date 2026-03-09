@@ -1,0 +1,1 @@
+plugins {\n    kotlin("jvm") version "1.9.23"\n}\n\ngroup = "com.fitstart"\nversion = "1.0"\n\ndependencies {\n    implementation(kotlin("stdlib"))\n}\n\ntasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {\n    kotlinOptions.jvmTarget = "17"\n}
